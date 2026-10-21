@@ -136,20 +136,22 @@ classDiagram
 
 ---
 
-## 🛠️ Technologies and Tools
+## 🛠️ Technologies & Tools
 
-* **Language & Framework:** Java 17+, Spring Boot 3+, Spring MVC
-* **Persistence & Migration:** Jakarta Persistence (JPA), Spring Data JPA, Flyway Migration, MySQL
-* **Validation & Productivity:** Jakarta Bean Validation, Project Lombok, Spring Boot DevTools
-* **Mapping & DTOs:** ModelMapper
-* **Standardization & Error Handling:** RFC 7807 (Problem Details), ISO 8601 (`OffsetDateTime`)
+- **Language & Framework:** Java 17+, Spring Boot 3+, Spring MVC
+- **Build & Dependency Management:** Apache Maven
+- **Persistence & Migration:** Jakarta Persistence (JPA), Spring Data JPA, Flyway Migration, MySQL
+- **Validation & Productivity:** Jakarta Bean Validation, Project Lombok, Spring Boot DevTools
+- **Mapping & DTOs:** ModelMapper
+- **Standardization & Error Handling:** RFC 7807 (Problem Details), ISO 8601 (`OffsetDateTime`)
+- **API Testing & Documentation:** Postman
 
 <br />
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-Persistence-6DB33F?style=flat-square&logo=spring&logoColor=white)  
-![Flyway](https://img.shields.io/badge/Flyway-Database_Migrations-CC0200?style=flat-square&logo=flyway&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Lombok](https://img.shields.io/badge/Lombok-Boilerplate_Reduction-red?style=flat-square)  
+![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Maven](https://img.shields.io/badge/Apache_Maven-Build-C71A36?style=flat-square&logo=apachemaven&logoColor=white) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-Persistence-6DB33F?style=flat-square&logo=spring&logoColor=white)  
+![Flyway](https://img.shields.io/badge/Flyway-Database_Migrations-CC0200?style=flat-square&logo=flyway&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-API_Testing-FF6C37?style=flat-square&logo=postman&logoColor=white) ![Lombok](https://img.shields.io/badge/Lombok-Boilerplate_Reduction-red?style=flat-square)  
 ![RFC 7807](https://img.shields.io/badge/RFC_7807-Problem_Details-00599C?style=flat-square) ![Bean Validation](https://img.shields.io/badge/Bean_Validation-Jakarta-green?style=flat-square)
 
 </div>
