@@ -7,7 +7,7 @@
 *.env
 
 # ==========================================
-# Compilação do Java (Bytecode e Builds)
+# Compilação e Builds (Java / Maven / Gradle)
 # ==========================================
 *.class
 *.jar
@@ -24,6 +24,14 @@ build/
 out/
 target/
 .gradle/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Maven Wrapper e Documentação do Initializr
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
 
 # ==========================================
 # Frontend & Node.js (para a pasta frontend/)
@@ -40,25 +48,33 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # ==========================================
-# Configurações do IntelliJ IDEA
+# Configurações de IDEs e Editores
 # ==========================================
+# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 *.ipr
 
-# ==========================================
-# Configurações do Eclipse
-# ==========================================
+# Eclipse / Spring Tool Suite (STS)
 .settings/
 .classpath
 .project
 .metadata/
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
 
-# ==========================================
-# Configurações do Visual Studio Code
-# ==========================================
+# Visual Studio Code
 .vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
 # ==========================================
 # Docker e Volumes de Dados Locais
@@ -66,6 +82,13 @@ yarn-error.log*
 postgres-data/
 kafka-data/
 .data/
+
+# ==========================================
+# Análise de Código e Qualidade (Sonar)
+# ==========================================
+.sonarlint/
+.sonar/
+sonarProject.properties
 
 # ==========================================
 # Arquivos do Sistema Operacional
@@ -89,10 +112,3 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 *.swp
-
-# ==========================================
-# Análise de Código e Qualidade (Sonar)
-# ==========================================
-.sonarlint/
-.sonar/
-sonarProject.properties
