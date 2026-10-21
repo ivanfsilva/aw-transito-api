@@ -1,4 +1,4 @@
-package br.com.ivanferreira.awtransito.awtransito;
+package br.com.ivanferreira.awtransito;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
