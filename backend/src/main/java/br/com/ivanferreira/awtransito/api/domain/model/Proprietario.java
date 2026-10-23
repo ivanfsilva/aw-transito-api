@@ -30,7 +30,6 @@ public class Proprietario {
 
     @NotBlank
     @Size(max = 20)
-    @Column(name = "fone")
     private String telefone;
 
 }
