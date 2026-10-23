@@ -1,5 +1,6 @@
 package br.com.ivanferreira.awtransito.api.controller;
 
+import br.com.ivanferreira.awtransito.api.domain.exception.NegocioException;
 import br.com.ivanferreira.awtransito.api.domain.model.Proprietario;
 import br.com.ivanferreira.awtransito.api.domain.repository.ProprietarioRepository;
 import br.com.ivanferreira.awtransito.api.domain.service.RegistroProprietarioService;
@@ -57,6 +58,11 @@ public class ProprietarioController {
 
         registroProprietarioService.excluir(proprietarioId);
         return ResponseEntity.noContent().build();
+    }
+
+    @ExceptionHandler(NegocioException.class)
+    public ResponseEntity<String> capturar(NegocioException e) {
+        return ResponseEntity.badRequest().body(e.getMessage());
     }
 
 }
