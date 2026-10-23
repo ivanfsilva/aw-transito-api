@@ -1,6 +1,8 @@
 package br.com.ivanferreira.awtransito.api.controller;
 
 import br.com.ivanferreira.awtransito.api.domain.model.Proprietario;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,20 +12,13 @@ import java.util.List;
 @RestController
 public class ProprietarioController {
 
+    @PersistenceContext
+    private EntityManager manager;
+
     @GetMapping("/proprietarios")
     public List<Proprietario> listar() {
-        var proprietario1 = new Proprietario();
-        proprietario1.setId(1L);
-        proprietario1.setNome("João");
-        proprietario1.setTelefone("34 99999-1111");
-        proprietario1.setEmail("joaodascouves@algaworks.com");
-
-        var proprietario2 = new Proprietario();
-        proprietario2.setId(2L);
-        proprietario2.setNome("Maria");
-        proprietario2.setTelefone("11 97777-1111");
-        proprietario2.setEmail("mariadasilva@algaworks.com");
-
-        return Arrays.asList(proprietario1, proprietario2);
+        return manager.createQuery("from Proprietario", Proprietario.class)
+                .getResultList();
     }
+    
 }
