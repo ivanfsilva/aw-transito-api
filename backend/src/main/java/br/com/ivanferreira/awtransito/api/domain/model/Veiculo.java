@@ -1,7 +1,14 @@
 package br.com.ivanferreira.awtransito.api.domain.model;
 
+import br.com.ivanferreira.awtransito.api.domain.validation.ValidationGroups;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.groups.ConvertGroup;
+import jakarta.validation.groups.Default;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,10 +26,20 @@ public class Veiculo {
     @EqualsAndHashCode.Include
     private Long id;
 
+    @Valid
+    @NotNull
     @ManyToOne
+    @ConvertGroup(from = Default.class, to = ValidationGroups.ProprietarioId.class)
     private Proprietario proprietario;
+
+    @NotBlank
     private String marca;
+
+    @NotBlank
     private String modelo;
+
+    @NotBlank
+    @Pattern(regexp = "[A-Z]{3}[0-9][0-9A-Z][0-9]{2}")
     private String placa;
 
     @Enumerated(EnumType.STRING)
