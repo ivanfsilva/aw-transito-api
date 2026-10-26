@@ -4,6 +4,7 @@ import br.com.ivanferreira.awtransito.api.domain.exception.NegocioException;
 import br.com.ivanferreira.awtransito.api.domain.model.Veiculo;
 import br.com.ivanferreira.awtransito.api.domain.repository.VeiculoRepository;
 import br.com.ivanferreira.awtransito.api.domain.service.RegistroVeiculoService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +34,7 @@ public class VeiculoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Veiculo cadastrar(@RequestBody Veiculo veiculo) {
+    public Veiculo cadastrar(@Valid @RequestBody Veiculo veiculo) {
         return registroVeiculoService.cadastrar(veiculo);
     }
 
@@ -41,5 +42,4 @@ public class VeiculoController {
     public ResponseEntity<String> capturar(NegocioException e) {
         return ResponseEntity.badRequest().body(e.getMessage());
     }
-
 }
