@@ -1,5 +1,6 @@
 package br.com.ivanferreira.awtransito.api.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -25,9 +26,13 @@ public class Veiculo {
     private String placa;
 
     @Enumerated(EnumType.STRING)
+    @JsonProperty(access = JsonProperty.Access.AUTO)
     private StatusVeiculo status;
 
+    @JsonProperty(access = JsonProperty.Access.AUTO)
     private LocalDateTime dataCadastro;
+
+    @JsonProperty(access = JsonProperty.Access.AUTO)
     private LocalDateTime dataApreensao;
 
 }
