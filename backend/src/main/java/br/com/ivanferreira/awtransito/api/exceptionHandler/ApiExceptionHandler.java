@@ -1,5 +1,6 @@
 package br.com.ivanferreira.awtransito.api.exceptionHandler;
 
+import br.com.ivanferreira.awtransito.domain.exception.EntidadeNaoEncontradaException;
 import br.com.ivanferreira.awtransito.domain.exception.NegocioException;
 import lombok.AllArgsConstructor;
 import org.springframework.context.MessageSource;
@@ -46,6 +47,15 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
         problemDetail.setTitle(e.getMessage());
         problemDetail.setType(URI.create("https://aw-transito-api.com/erros/regra-de-negocio"));
+
+        return problemDetail;
+    }
+
+    @ExceptionHandler(EntidadeNaoEncontradaException.class)
+    public ProblemDetail handleEntidadeNaoEncontrada(EntidadeNaoEncontradaException e) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
+        problemDetail.setTitle(e.getMessage());
+        problemDetail.setType(URI.create("https://aw-transito-api.com/erros/nao-encontrado"));
 
         return problemDetail;
     }
