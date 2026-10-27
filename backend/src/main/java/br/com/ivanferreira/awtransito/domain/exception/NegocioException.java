@@ -1,4 +1,4 @@
-package br.com.ivanferreira.awtransito.api.domain.exception;
+package br.com.ivanferreira.awtransito.domain.exception;
 
 public class NegocioException extends RuntimeException {
 

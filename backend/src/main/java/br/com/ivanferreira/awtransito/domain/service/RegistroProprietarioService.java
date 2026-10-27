@@ -1,8 +1,8 @@
-package br.com.ivanferreira.awtransito.api.domain.service;
+package br.com.ivanferreira.awtransito.domain.service;
 
-import br.com.ivanferreira.awtransito.api.domain.exception.NegocioException;
-import br.com.ivanferreira.awtransito.api.domain.model.Proprietario;
-import br.com.ivanferreira.awtransito.api.domain.repository.ProprietarioRepository;
+import br.com.ivanferreira.awtransito.domain.exception.NegocioException;
+import br.com.ivanferreira.awtransito.domain.model.Proprietario;
+import br.com.ivanferreira.awtransito.domain.repository.ProprietarioRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
