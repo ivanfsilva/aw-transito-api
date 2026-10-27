@@ -1,9 +1,8 @@
 package br.com.ivanferreira.awtransito.api.controller;
 
-import br.com.ivanferreira.awtransito.api.domain.exception.NegocioException;
-import br.com.ivanferreira.awtransito.api.domain.model.Proprietario;
-import br.com.ivanferreira.awtransito.api.domain.repository.ProprietarioRepository;
-import br.com.ivanferreira.awtransito.api.domain.service.RegistroProprietarioService;
+import br.com.ivanferreira.awtransito.domain.model.Proprietario;
+import br.com.ivanferreira.awtransito.domain.repository.ProprietarioRepository;
+import br.com.ivanferreira.awtransito.domain.service.RegistroProprietarioService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -47,6 +46,7 @@ public class ProprietarioController {
 
         proprietario.setId(proprietarioId);
         Proprietario proprietarioAtualizado = registroProprietarioService.salvar(proprietario);
+
         return ResponseEntity.ok(proprietarioAtualizado);
     }
 

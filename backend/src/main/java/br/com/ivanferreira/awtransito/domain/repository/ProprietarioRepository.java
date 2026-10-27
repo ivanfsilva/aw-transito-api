@@ -1,6 +1,6 @@
-package br.com.ivanferreira.awtransito.api.domain.repository;
+package br.com.ivanferreira.awtransito.domain.repository;
 
-import br.com.ivanferreira.awtransito.api.domain.model.Proprietario;
+import br.com.ivanferreira.awtransito.domain.model.Proprietario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

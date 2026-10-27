@@ -1,6 +1,6 @@
-package br.com.ivanferreira.awtransito.api.domain.repository;
+package br.com.ivanferreira.awtransito.domain.repository;
 
-import br.com.ivanferreira.awtransito.api.domain.model.Veiculo;
+import br.com.ivanferreira.awtransito.domain.model.Veiculo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

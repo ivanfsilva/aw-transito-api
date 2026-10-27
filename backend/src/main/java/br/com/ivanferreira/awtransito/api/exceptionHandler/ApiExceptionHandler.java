@@ -1,6 +1,6 @@
 package br.com.ivanferreira.awtransito.api.exceptionHandler;
 
-import br.com.ivanferreira.awtransito.api.domain.exception.NegocioException;
+import br.com.ivanferreira.awtransito.domain.exception.NegocioException;
 import lombok.AllArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -29,7 +29,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
                                                                   WebRequest request) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(status);
         problemDetail.setTitle("Um ou mais campos estão inválidos");
-        problemDetail.setType(URI.create("https://algatransito.com/erros/campos-invalidos"));
+        problemDetail.setType(URI.create("https://aw-transito-api.com/erros/campos-invalidos"));
 
         Map<String, String> fields = ex.getBindingResult().getAllErrors()
                 .stream()
