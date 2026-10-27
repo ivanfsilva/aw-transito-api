@@ -5,6 +5,7 @@ import br.com.ivanferreira.awtransito.api.model.VeiculoModel;
 import br.com.ivanferreira.awtransito.api.model.input.VeiculoInput;
 import br.com.ivanferreira.awtransito.domain.model.Veiculo;
 import br.com.ivanferreira.awtransito.domain.repository.VeiculoRepository;
+import br.com.ivanferreira.awtransito.domain.service.ApreensaoVeiculoService;
 import br.com.ivanferreira.awtransito.domain.service.RegistroVeiculoService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -22,6 +23,7 @@ public class VeiculoController {
     private final VeiculoRepository veiculoRepository;
     private final RegistroVeiculoService registroVeiculoService;
     private final VeiculoAssembler veiculoAssembler;
+    private final ApreensaoVeiculoService apreensaoVeiculoService;
 
     @GetMapping
     public List<VeiculoModel> listar() {
@@ -43,5 +45,17 @@ public class VeiculoController {
         Veiculo veiculoCadastrado = registroVeiculoService.cadastrar(novoVeiculo);
 
         return veiculoAssembler.toModel(veiculoCadastrado);
+    }
+
+    @PutMapping("/{veiculoId}/apreensao")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void apreender(@PathVariable Long veiculoId) {
+        apreensaoVeiculoService.apreender(veiculoId);
+    }
+
+    @DeleteMapping("/{veiculoId}/apreensao")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void removerApreensao(@PathVariable Long veiculoId) {
+        apreensaoVeiculoService.removerApreensao(veiculoId);
     }
 }

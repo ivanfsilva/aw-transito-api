@@ -1,5 +1,6 @@
 package br.com.ivanferreira.awtransito.domain.service;
 
+import br.com.ivanferreira.awtransito.domain.exception.EntidadeNaoEncontradaException;
 import br.com.ivanferreira.awtransito.domain.exception.NegocioException;
 import br.com.ivanferreira.awtransito.domain.model.Proprietario;
 import br.com.ivanferreira.awtransito.domain.model.StatusVeiculo;
@@ -20,7 +21,7 @@ public class RegistroVeiculoService {
 
     public Veiculo buscar(Long veiculoId) {
         return veiculoRepository.findById(veiculoId)
-                .orElseThrow(() -> new NegocioException("Veículo não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veículo não encontrado"));
     }
     @Transactional
     public Veiculo cadastrar(Veiculo novoVeiculo) {
@@ -44,6 +45,5 @@ public class RegistroVeiculoService {
 
         return veiculoRepository.save(novoVeiculo);
     }
-
 
 }
