@@ -163,16 +163,16 @@ classDiagram
 > 💡 **Scope note:** Version **v1.0.0** consolidates the full baseline of the **Ignição Spring REST** training by
 > AlgaWorks. Versions from **v2.0.0** onwards represent **authorial expansions and extra practice**, implemented
 > independently to elevate project maturity with automated testing, a graphical interface, interactive documentation,
-> and
-> security.
+> and security.
 
-| Version                                                                                                                | Description                                                                                                                           |
-|:-----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
-| [![v1.0.0](https://img.shields.io/badge/v1.0.0-Planned-blue?style=flat-square&logo=github)](../../releases/tag/v1.0.0) | **[AlgaWorks Baseline]** Delivery of the core ecosystem: CRUDs, Flyway, Bean Validation, ModelMapper, RFC 7807, and non-CRUD actions. |
-| [![v2.0.0](https://img.shields.io/badge/v2.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v2.0.0)         | **[Extra Practice]** Automated test suite (unit and integration) with JUnit 5, Mockito, and REST Assured.                             |
-| [![v3.0.0](https://img.shields.io/badge/v3.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v3.0.0)         | **[Extra Practice]** Web interface (Front-end Dashboard) for visual management and tracking of vehicles and citations.                |
-| [![v4.0.0](https://img.shields.io/badge/v4.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v4.0.0)         | **[Extra Practice]** Interactive API route documentation using OpenAPI 3 / Swagger UI.                                                |
-| [![v5.0.0](https://img.shields.io/badge/v5.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v5.0.0)         | **[Extra Practice]** Security layer, access control, and authentication with Spring Security and OAuth2 / JWT.                        |
+| Version                                                                                                                                                                           | Description                                                                                                                           |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| [![v1.0.0 Completed](https://img.shields.io/badge/v1.0.0-Completed-brightgreen?style=flat-square&logo=github)](https://github.com/ivanfsilva/aw-transito-api/releases/tag/v1.0.0) | **[AlgaWorks Baseline]** Delivery of the core ecosystem: CRUDs, Flyway, Bean Validation, ModelMapper, RFC 7807, and non-CRUD actions. |
+|                                                                                                                                                                                   |                                                                                                                                       |
+| [![v2.0.0](https://img.shields.io/badge/v2.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v2.0.0)                                                                    | **[Extra Practice]** Automated test suite (unit and integration) with JUnit 5, Mockito, and REST Assured.                             |
+| [![v3.0.0](https://img.shields.io/badge/v3.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v3.0.0)                                                                    | **[Extra Practice]** Web interface (Front-end Dashboard) for visual management and tracking of vehicles and citations.                |
+| [![v4.0.0](https://img.shields.io/badge/v4.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v4.0.0)                                                                    | **[Extra Practice]** Interactive API route documentation using OpenAPI 3 / Swagger UI.                                                |
+| [![v5.0.0](https://img.shields.io/badge/v5.0.0-Future-lightgrey?style=flat-square)](../../releases/tag/v5.0.0)                                                                    | **[Extra Practice]** Security layer, access control, and authentication with Spring Security and OAuth2 / JWT.                        |
 
 ---
 

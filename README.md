@@ -169,15 +169,16 @@ classDiagram
 > iniciativa própria para elevar a maturidade do projeto com testes automatizados, interface gráfica, documentação
 > interativa e segurança.
 
-| Versão                                                                                                                   | Descrição                                                                                                                          |
-|:-------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| [![v1.0.0](https://img.shields.io/badge/v1.0.0-Planejado-blue?style=flat-square&logo=github)](../../releases/tag/v1.0.0) | **[Baseline AlgaWorks]** Entrega do ecossistema principal: CRUDs, Flyway, Bean Validation, ModelMapper, RFC 7807 e ações não-CRUD. |
-| [![v2.0.0](https://img.shields.io/badge/v2.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v2.0.0)           | **[Prática Extra]** Suíte de testes automatizados (unitários e de integração) com JUnit 5, Mockito e REST Assured.                 |
-| [![v3.0.0](https://img.shields.io/badge/v3.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v3.0.0)           | **[Prática Extra]** Interface web (Dashboard Front-end) para gestão e acompanhamento visual de veículos e autuações.               |
-| [![v4.0.0](https://img.shields.io/badge/v4.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v4.0.0)           | **[Prática Extra]** Documentação interativa das rotas da API utilizando OpenAPI 3 / Swagger UI.                                    |
-| [![v5.0.0](https://img.shields.io/badge/v5.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v5.0.0)           | **[Prática Extra]** Adição de camada de segurança, controle de acesso e autenticação com Spring Security e OAuth2 / JWT.           |
+| Versão                                                                                                                                                                                 | Descrição                                                                                                                          |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| [![v1.0.0 Concluído](https://img.shields.io/badge/v1.0.0-Conclu%C3%ADdo-brightgreen?style=flat-square&logo=github)](https://github.com/ivanfsilva/aw-transito-api/releases/tag/v1.0.0) | **[Baseline AlgaWorks]** Entrega do ecossistema principal: CRUDs, Flyway, Bean Validation, ModelMapper, RFC 7807 e ações não-CRUD. |
+| [![v2.0.0](https://img.shields.io/badge/v2.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v2.0.0)                                                                         | **[Prática Extra]** Suíte de testes automatizados (unitários e de integração) com JUnit 5, Mockito e REST Assured.                 |
+| [![v3.0.0](https://img.shields.io/badge/v3.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v3.0.0)                                                                         | **[Prática Extra]** Interface web (Dashboard Front-end) para gestão e acompanhamento visual de veículos e autuações.               |
+| [![v4.0.0](https://img.shields.io/badge/v4.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v4.0.0)                                                                         | **[Prática Extra]** Documentação interativa das rotas da API utilizando OpenAPI 3 / Swagger UI.                                    |
+| [![v5.0.0](https://img.shields.io/badge/v5.0.0-Futuro-lightgrey?style=flat-square)](../../releases/tag/v5.0.0)                                                                         | **[Prática Extra]** Adição de camada de segurança, controle de acesso e autenticação com Spring Security e OAuth2 / JWT.           |
 
 ---
+
 
 ## 🍃 Sobre
 
